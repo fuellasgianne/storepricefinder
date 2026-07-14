@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tindahan Price Finder</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🏪 Store Price Finder</h1>
+
+<p>Inventory Management System</p>
+
+</header>
+
+<div class="container">
+
+<div class="searchBox">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Search Item..."
+>
+
+<button id="addBtn">
+➕ Add Item
+</button>
+
+</div>
+
+<div class="dashboard">
+
+<div class="card">
+
+<h3>Total Items</h3>
+
+<h2 id="totalItems">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Low Stock</h3>
+
+<h2 id="lowStock">0</h2>
+
+</div>
+
+</div>
+
+<div id="inventory">
+
+</div>
+
+</div>
+
+
+<!-- Add / Edit Item -->
+
+<div id="modal" class="modal">
+
+<div class="modalContent">
+
+<h2 id="modalTitle">
+
+Add Item
+
+</h2>
+
+<input
+id="itemName"
+placeholder="Item Name"
+>
+
+<input
+id="itemPrice"
+type="number"
+placeholder="Price"
+>
+
+<input
+id="itemStock"
+type="number"
+placeholder="Stock"
+>
+
+<input
+id="itemCategory"
+placeholder="Category"
+>
+
+<div class="buttons">
+
+<button id="saveBtn">
+
+Save
+
+</button>
+
+<button id="cancelBtn">
+
+Cancel
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>
